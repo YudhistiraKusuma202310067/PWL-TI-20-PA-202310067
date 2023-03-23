@@ -8,7 +8,7 @@ import {
   Col,
   Container,
 } from "react-bootstrap";
-import Background from "../asset/Background.jpg";
+import Background from "../../../asset/Background.jpg";
 
 const Forms = () => {
   const date = new Date();
@@ -140,7 +140,10 @@ const Forms = () => {
             <Row>
               <Col xs="3">Age</Col>
               <Col xs="1">:</Col>
-              <Col>{Age}{" years old"}</Col>
+              <Col>
+                {Age}
+                {" years old"}
+              </Col>
             </Row>
           </Container>
         </Modal.Body>
