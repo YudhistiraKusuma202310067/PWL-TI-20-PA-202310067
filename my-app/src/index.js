@@ -16,6 +16,8 @@ import Layout from './components/Latihan/Pertemuan 3/layouts/Layout';
 import Home from './components/Latihan/Pertemuan 3/modules/components/homes/Home';
 import { BrowserRouter } from 'react-router-dom';
 import AppRoute from './components/Latihan/Pertemuan 3/apps/AppRoute';
+import Login from './components/Tugas/Tugas 3/Login';
+import NotFound from './components/Tugas/Tugas 3/NotFound';
 
 const { PUBLIC_URL } = process.env;
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,8 +30,9 @@ root.render(
     {/* <Layouts /> */}
     {/* <Widget1 /> */}
     {/* <FormsMultiple /> */}
-
     {/* <Layout /> */}
+    {/* <Login /> */}
+    {/* <NotFound /> */}
 
     {/* <Layout>
       <Home />
@@ -38,7 +41,7 @@ root.render(
     <BrowserRouter basename={PUBLIC_URL}>
       <AppRoute />
     </BrowserRouter>
-
+    
   </React.StrictMode>
 );
 
