@@ -15,7 +15,8 @@ import FormsMultiple from './components/Tugas/Tugas 2/FormsMultiple';
 import Layout from './components/Latihan/Pertemuan 3/layouts/Layout';
 import Home from './components/Latihan/Pertemuan 3/modules/components/homes/Home';
 import { BrowserRouter } from 'react-router-dom';
-import AppRoute from './components/Latihan/Pertemuan 3/apps/AppRoute';
+// import AppRoute from './components/Latihan/Pertemuan 3/apps/AppRoute';
+import AppRoute2 from "./components/Latihan/Pertemuan 4/apps/routes/AppRoute"
 import Login from './components/Tugas/Tugas 3/Login';
 import NotFound from './components/Tugas/Tugas 3/NotFound';
 
@@ -38,8 +39,12 @@ root.render(
       <Home />
     </Layout> */}
 
-    <BrowserRouter basename={PUBLIC_URL}>
+    {/* <BrowserRouter basename={PUBLIC_URL}>
       <AppRoute />
+    </BrowserRouter> */}
+
+    <BrowserRouter basename={PUBLIC_URL}>
+      <AppRoute2 />
     </BrowserRouter>
     
   </React.StrictMode>
