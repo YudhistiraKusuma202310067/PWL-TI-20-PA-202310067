@@ -15,10 +15,13 @@ import FormsMultiple from './components/Tugas/Tugas 2/FormsMultiple';
 import Layout from './components/Latihan/Pertemuan 3/layouts/Layout';
 import Home from './components/Latihan/Pertemuan 3/modules/components/homes/Home';
 import { BrowserRouter } from 'react-router-dom';
-// import AppRoute from './components/Latihan/Pertemuan 3/apps/AppRoute';
+import AppRoute from './components/Latihan/Pertemuan 3/apps/AppRoute';
 import AppRoute2 from "./components/Latihan/Pertemuan 4/apps/routes/AppRoute"
 import Login from './components/Tugas/Tugas 3/Login';
 import NotFound from './components/Tugas/Tugas 3/NotFound';
+import FormQuiz from './components/Tugas/Quiz/Form';
+import Link from './components/Tugas/Quiz/Link';
+import Form from './components/Tugas/Tugas 5/Form';
 
 const { PUBLIC_URL } = process.env;
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -39,13 +42,19 @@ root.render(
       <Home />
     </Layout> */}
 
-    {/* <BrowserRouter basename={PUBLIC_URL}>
+    <BrowserRouter basename={PUBLIC_URL}>
       <AppRoute />
+    </BrowserRouter>
+
+    {/* <BrowserRouter basename={PUBLIC_URL}>
+      <AppRoute2 />
     </BrowserRouter> */}
 
-    <BrowserRouter basename={PUBLIC_URL}>
-      <AppRoute2 />
-    </BrowserRouter>
+    {/* <Form/> */}
+
+    {/* <FormQuiz /> */}
+
+    {/* <Link /> */}
     
   </React.StrictMode>
 );

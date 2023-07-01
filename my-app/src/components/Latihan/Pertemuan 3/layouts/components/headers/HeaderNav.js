@@ -2,10 +2,11 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 
 export default function HeaderNav() {
+    const sessionName = localStorage.getItem("npm")
     const menuList = [{ id: 1, name: "Home", path: "/home", icon:"bi-house-door" },
                       { id: 2, name: "Explore", path: "/explore", icon:"bi-compass" },
                       { id: 3, name: "Messages", path: "/messages", icon:"bi-send" },
-                      { id: 4, name: "Log Out", path: "/log-out", icon:"bi-box-arrow-left" }];
+                      { id: 4, name: "Log Out - " + sessionName, path: "/log-out", icon:"bi-box-arrow-left" }];
     return (
         <header>
             <nav className="navbar navbar-expand-md fixed-top shadow bg-white">
